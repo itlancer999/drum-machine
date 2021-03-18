@@ -72,7 +72,7 @@ class DrumPad extends React.Component {
     }
 
   handleKeyDown = e => {
-    if(e.keyCode == this.props.keyTrigger.charCodeAt()){
+    if(e.keyCode === this.props.keyTrigger.charCodeAt()){
       this.audio.play()
       this.audio.currentATime = 0
       this.props.handleDisplay(this.props.id)
